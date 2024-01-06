@@ -399,19 +399,6 @@ img {
   box-shadow: 0 4px 8px rgba(0,0,0,.15);
 }
 
-/*==================== SERVICES ====================*/
-.services{
-  padding: var(--bm-4px);
-  text-align: center;
-  width: 86%;
-  margin: 7%;
-  box-shadow: 0 2px 4px rgba(0,0,0,.15);
-  transition: .4s;
-}
-.services:hover{
-  box-shadow: 0 4px 8px rgba(0,0,0,.15);
-}
-
 /*==================== PORTFOLIO ====================*/
 .portfolio_container{
   overflow: initial;
