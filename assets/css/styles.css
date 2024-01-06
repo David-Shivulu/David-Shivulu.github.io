@@ -187,8 +187,8 @@ img {
 }
 
 .nav_list{
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(3, .5fr);
+  gap: 24px;
 }
 
 .nav_link{
