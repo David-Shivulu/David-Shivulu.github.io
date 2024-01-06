@@ -87,7 +87,6 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -183,7 +182,7 @@ img {
     padding: 32px 24px 64px;
     box-shadow: 0 -1px 4px rgba(0,0,0,.15);
     border-radius: 24px 24px 0 0;
-    transition: 2s;
+    transition: 1s;
   }
 }
 
@@ -215,11 +214,11 @@ img {
   bottom: 8px;
   font-size: 16px;
   cursor: pointer;
-  color: var(--first-color);
+  color: red;
 }
 
 .nav_close:hover{
-  color: var(--first-color-alt);
+  color: red;
 }
 
 /* show menu */
@@ -260,7 +259,7 @@ img {
 }
 
 .home_img_bg{
-  width: 200px;
+  width: 250px;
   fill: var(--first-color);
 }
 
