@@ -10,6 +10,7 @@
 
         <!--==================== SWIPER CSS ====================-->
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -20,7 +21,7 @@
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <img src="assets/img/logo.png" alt="logo" style="height: auto; width: 90px; left: 2px;">
+                <img src="assets/img/logo.png" alt="logo" style="height: auto; width: 90px;">
 
                 <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list grid">
@@ -43,6 +44,12 @@
                     </li>
 
                     <li class="nav_item">
+                        <a href="#services" class="nav_link">
+                            <i class="uil uil-briefcase-alt nav_icon"></i>SERVICES
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
                         <a href="#portfolio" class="nav_link">
                             <i class="uil uil-scenery nav_icon"></i>PORTFOLIO
                         </a>
@@ -53,15 +60,8 @@
                             <i class="uil uil-message nav_icon"></i>CONTACT ME
                         </a>
                     </li>
-
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                          <i class="uil uil-times nav_icon" id="nav-close" style="color: red;"></i>CLOSE 
-                        </a>
-                    </li>
-                    
                 </ul>
-                
+                <i class="uil uil-times nav_icon" id="nav-close"></i>
                 </div>
 
                 <div class="nav_btns">
@@ -193,16 +193,25 @@
                     </div>
             </section>
             
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section_title">Services</h2>
+                <span class="section_subtitle">What I Offer</span>
+                <div class="skills_content>
+                    <p class="skills_subtitle">I offer services basing on the level of my <a href="#skills">skills</a>, as stated above<p/>
+                </div>
+            </section>
+
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
                 <h2 class="section_title">Portfolio</h2>
                 <span class="section_subtitle">My Recent Work</span>
 
                 <div class="portfolio_container container swiper-container">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper w3-content w3-display-container">
                         <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="" alt="" class="portfolio_img">
+                        <div class="portfolio_content grid swiper-slide mySlides w3-animate-left">
+                            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio_img">
 
                             <div class="portfolio_data">
                                 <h3 class="portfolio_title">My Portfolio Website</h3>
@@ -215,8 +224,8 @@
                         </div>
 
                         <!--==================== PORTFOLIO 2 ====================-->
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="" alt="" class="portfolio_img">
+                        <div class="portfolio_content grid swiper-slide mySlides w3-animate-right">
+                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio_img">
 
                             <div class="portfolio_data">
                                 <h3 class="portfolio_title">Recent Logos</h3>
@@ -231,10 +240,10 @@
                     </div>
 
                     <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon" onclick="plusDivs(1)"></i>
                     </div>
                     <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon" onclick="plusDivs(-1)"></i>
 
                     </div>
                     <div class="swiper-pagination"></div>
