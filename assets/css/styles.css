@@ -575,8 +575,6 @@ img {
 /*==================== FOOTER ====================*/
 .footer{
   padding-top: 32px;
-  align-items: center;
-  justify-content: center;
 }
 
 .footer_container{
@@ -586,6 +584,8 @@ img {
 .footer_bg{
   background-color: var(--first-color-alt);
   padding: 32px 0 48px;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer_title{
