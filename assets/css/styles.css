@@ -379,15 +379,16 @@ img {
 /*==================== ABOUT ====================*/
 .about_img{
   width: 200px;
-  border-radius: 80px;
+  border-radius: 15px;
   justify-self: center;
   align-self: center;
-  border: 1px solid gray;
 }
 
 .about_description{
   text-align: center;
+  margin-top: 5px;
   margin-bottom: var(--bm-40px);
+  margin-left: 5px;
 }
 
 .about_button{
@@ -397,12 +398,6 @@ img {
 
 .about_content{
   padding: 8px;
-  box-shadow: 0 2px 4px rgba(230,222,222,.15);
-  transition: .4s;
-}
-
-.about_content:hover{
-  box-shadow: 0 4px 8px rgba(230, 222, 222, 0.15);
 }
 
 /*==================== SKILLS ====================*/
@@ -424,15 +419,16 @@ img {
 .skills_content{
   width: 86%;
   margin: 7%;
+  border-radius: 15px;
   align-items: center;
   text-align: center;
   padding: 4px;
-  box-shadow: 0 2px 4px rgba(230, 222, 222, 0.15);
+  box-shadow: 0 1.5px 3px rgba(230, 222, 222, 0.15);
   transition: .4s;
 }
 
 .skills_content:hover{
-  box-shadow: 0 4px 8px rgba(230,222,222,.15);
+  box-shadow: 0 3px 6px rgba(230,222,222,.15);
 }
 
 /*==================== PORTFOLIO ====================*/
@@ -521,6 +517,7 @@ img {
 
 .project_img{
   width: 232px;
+  height: 300px;
   justify-self: center;
 }
 
@@ -827,6 +824,7 @@ img {
 
   .about_img{
     width: 350px;
+    border-radius: 15px;
   }
 
   .about_description{
@@ -842,12 +840,16 @@ img {
   }
 
   .skills_container{
-    grid-template-columns: repeat(2, 220px);
+    display: inline-grid;
     justify-content: center;
   }
 
   .skills_content{
-    padding: 80px 0 32px 40px;
+    padding: 5%;
+    width: 85%;
+    display: flexbox;
+    justify-content: center;
+    clear: both;
   }
 
   .portfolio_img{
@@ -912,19 +914,41 @@ img {
   }
 
   .skills_container{
-    grid-template-columns: repeat(3, 240px);
+    display: inline-grid;
+    justify-content: center;
+    margin-left: 13%;
+    margin-right: 13%;
   }
 
-  .portfolio_content{
-    column-gap: 80px;
+  .skills_content{
+    padding: 6%;
+    height: 225px;
+    width: 90%;
+    display: flexbox;
+    justify-content: center;
+    clear: both;
+  }
+
+  .portfolio_container{
+    align-items: center;
+  }
+  .column_display{
+    width: 45%;
+    display: inline-flex;
+    float: left;
+    margin-left: 5%;
+  }
+
+  .portfolio_data{
+    margin: 4%;
   }
 
   .swiper-portfolio-icon{
-    font-size: 56px;
+    font-size: 50px;
   }
 
   .swiper-button-next{
-    right: -56px;
+    right: -10px;
   }
 
   .contact_container{
