@@ -6,7 +6,7 @@
     --header-height: 50px;
 
     /*========== Colors ==========*/
-    --display-color: linear-gradient(to top right, #000066 0%, #000000 100%);
+    --display-color: linear-gradient(to top right, #000066 0%, rgb(18, 18, 151) 50%, #171515 100%);
     --hue-color: 250;
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 70%, 52%);
@@ -293,7 +293,7 @@ img {
 }
 
 .home_img_bg_img{
-  width: 170px;
+  width: 210px;
 }
 
 .home_data_content{
@@ -346,7 +346,7 @@ img {
 /*==================== BUTTONS ====================*/
 .button{
   display: inline-block;
-  background-color: var(--first-color);
+  background: var(--display-color);
   color: #fff;
   padding: 16px;
   border-radius: 8px;
@@ -641,7 +641,7 @@ img {
   position: fixed;
   right: 16px;
   bottom: -20%;
-  background-color: var(--first-color);
+  background: var(--display-color);
   opacity: .8;
   padding: 0 4.8px;
   border-radius: 6.4px;
