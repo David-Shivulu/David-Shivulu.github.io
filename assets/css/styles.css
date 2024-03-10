@@ -312,7 +312,7 @@ img {
 }
 
 .home_description{
-  margin-bottom: var(--bm-16px);
+  margin-bottom: var(--bm-12px);
 }
 
 .home_scroll{
@@ -369,8 +369,7 @@ img {
 }
 
 .button-white{
-  background-color: #fff;
-  color: var(--first-color);
+  color: #fff;
 }
 
 .button-white:hover{
@@ -378,17 +377,17 @@ img {
 }
 /*==================== ABOUT ====================*/
 .about_img{
-  width: 200px;
+  width: 90%;
+  height: 210px;
   border-radius: 15px;
   justify-self: center;
   align-self: center;
 }
 
 .about_description{
-  text-align: center;
   margin-top: 5px;
   margin-bottom: var(--bm-40px);
-  margin-left: 5px;
+  padding-left: 15px;
 }
 
 .about_button{
@@ -418,11 +417,11 @@ img {
 
 .skills_content{
   width: 86%;
+  height: 210px;
   margin: 7%;
   border-radius: 15px;
-  align-items: center;
   text-align: center;
-  padding: 4px;
+  padding-top: 5px;
   box-shadow: 0 1.5px 3px rgba(230, 222, 222, 0.15);
   transition: .4s;
 }
@@ -516,8 +515,8 @@ img {
 }
 
 .project_img{
-  width: 232px;
-  height: 300px;
+  width: 100%;
+  height: 270px;
   justify-self: center;
 }
 
@@ -802,7 +801,7 @@ img {
   }
 
   .home_content{
-    padding-top: 88px;
+    padding-top: 12px;
     column-gap: 32px;
   }
 
@@ -815,6 +814,7 @@ img {
   }
 
   .home_scroll-button{
+    padding-top: 1px;
     margin-left: 48px;
   }
 
@@ -878,6 +878,7 @@ img {
 
   .project_description{
     padding-top: 13px;
+    width: 50%;
   }
 
   .footer_container{
