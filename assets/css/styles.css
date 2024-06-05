@@ -16,7 +16,7 @@
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --body-color: linear-gradient(45deg, rgb(248, 242, 242) 0%, rgb(206, 206, 220) 50%, rgb(246, 193, 246) 100%);
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -70,11 +70,10 @@ body.dark-theme{
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 75%);
     --input-color: hsl(var(--hue-color), 30%, 16%);
-    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --body-color: linear-gradient(45deg, purple 0%, rgb(60, 4, 60) 45%, indigo 80%);
     --container-color: hsl(var(--hue-color), 29%, 16%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 45%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
-
 }
 
 /*========== Button Dark/Light ==========*/
@@ -109,7 +108,11 @@ body {
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
+  background: var(--body-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: var(--text-color);
   overflow-x: hidden;
 }
@@ -171,7 +174,7 @@ img {
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  background: var(--body-color);
 }
 
 /*==================== NAV ====================*/
@@ -203,7 +206,7 @@ img {
     bottom: -100%;
     left: 0;
     width: 100%;
-    background-color: var(--body-color);
+    background: var(--body-color);
     padding: 32px 24px 64px;
     box-shadow: 0 -1px 4px rgba(230,222,222,.15);
     border-radius: 24px 24px 0 0;
@@ -420,6 +423,7 @@ img {
   height: 210px;
   margin: 7%;
   border-radius: 15px;
+  backdrop-filter: blur(300px);
   text-align: center;
   padding-top: 5px;
   box-shadow: 0 1.5px 3px rgba(230, 222, 222, 0.15);
